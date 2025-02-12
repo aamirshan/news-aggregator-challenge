@@ -40,9 +40,10 @@ Used for the API for News Aggregation, from NewsAPI, The Guardian & New York Tim
 
 ### SET Schedule for fetching news from above API'section
 
-path : app/console/kernel.php
-$schedule->command('fetch:news')->everyMinute();
-you can set refresh time of news apis as per your requirments
+- path : app/console/kernel.php
+- $schedule->command('fetch:news')->everyMinute();
+- Hourly , every 5 minutes etc
+- you can set refresh time of news apis as per your requirments
 
 ### Usage
 
