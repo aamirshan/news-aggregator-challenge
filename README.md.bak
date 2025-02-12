@@ -46,7 +46,7 @@ Used for the API for News Aggregation, from NewsAPI, The Guardian & New York Tim
 * Visit `http://127.0.0.1:8000/api/getarticles` to fetch all top headlines in JSON format.
 
 ### Author
-[Aamir shan](http://github.com/aamirshan)
+[Your Name](http://github.com/your-github-profile)
 
 ## License
 This project is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
