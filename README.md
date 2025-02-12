@@ -3,50 +3,50 @@
 _News Aggregation API service built on Laravel_
 
 ### Configuration
+
 Used for the API for News Aggregation, from NewsAPI, The Guardian & New York Times.
 
 #### DB
- * `DB_DATABASE` - MySQL DB Name. Defaults to `news_aggregator`
- * `DB_USERNAME` - MySQL DB Username.
- * `DB_PASSWORD` - MySQL DB Password
 
-#### NEWSAPI 
- * `NEWSAPI_KEY` - The API key is given at [NewsAPI](https://newsapi.org/register).
- * `NEWSAPI_TIMEOUT` - Defaults to 15, if not set.
- * `NEWSAPI_RETRY_TIMES` - The number of times to retry fetching news if the first request fails. Defaults to null if not set.
- * `NEWSAPI_RETRY_SLEEP` - The amount of time to wait between failed requests. Defaults to null if not set.
+- `DB_DATABASE` - MySQL DB Name. Defaults to `news_aggregator`
+- `DB_USERNAME` - MySQL DB Username.
+- `DB_PASSWORD` - MySQL DB Password
 
-#### THE GUARDIAN NEWS 
- * `GUARDIANAPI_KEY` - The API key is given at [The Guardian](https://open-platform.theguardian.com/access).
- * `GUARDIANAPI_TIMEOUT` - Defaults to 15, if not set.
- * `GUARDIANAPI_RETRY_TIMES` - The number of times to retry fetching news if the first request fails. Defaults to null if not set.
- * `GUARDIANAPI_RETRY_SLEEP` - The amount of time to wait between failed requests. Defaults to null if not set.
+#### NEWSAPI
 
-#### THE NEW YORK TIMES 
- * `NEWYORKTIMESAPI_KEY` - The API key is given at [The New York Times](https://developer.nytimes.com/).
- * `NEWYORKTIMESAPI_TIMEOUT` - Defaults to 15, if not set.
- * `NEWYORKTIMESAPI_RETRY_TIMES` - The number of times to retry fetching news if the first request fails. Defaults to null if not set.
- * `NEWYORKTIMESAPI_RETRY_SLEEP` - The amount of time to wait between failed requests. Defaults to null if not set.
+- `NEWSAPI_KEY` - The API key is given at [NewsAPI](https://newsapi.org/register).
+
+#### THE GUARDIAN NEWS
+
+- `GUARDIANAPI_KEY` - The API key is given at [The Guardian](https://open-platform.theguardian.com/access).
+
+#### THE NEW YORK TIMES
+
+- `NEWYORKTIMESAPI_KEY` - The API key is given at [The New York Times](https://developer.nytimes.com/).
 
 ### Setup
-1. **PHP 8.0+**  
-1. **MySQL 8.0+**  
-1. **[Composer](https://getcomposer.org/) installed.**  
-1. `git clone https://github.com/YOUR_GITHUB_USERNAME/news-aggregator.git`  
-1. `cd news-aggregator`  
-1. `cp .env.example .env`  
-1. Populate your `.env` file with the API keys and database credentials as specified in the configuration section.  
-1. `composer install`  
-1. `php artisan key:generate`  
-1. `php artisan migrate`  
-1. `php artisan serve`  
+
+1. **PHP 8.0+**
+1. **MySQL 8.0+**
+1. **[Composer](https://getcomposer.org/) installed.**
+1. `git clone https://github.com/YOUR_GITHUB_USERNAME/news-aggregator.git`
+1. `cd news-aggregator`
+1. `cp .env.example .env`
+1. Populate your `.env` file with the API keys and database credentials as specified in the configuration section.
+1. `composer install`
+1. `php artisan key:generate`
+1. `php artisan migrate`
+1. `php artisan serve`
 
 ### Usage
-* Visit `http://127.0.0.1:8000/articles` to display the latest news with a design layout.  
-* Visit `http://127.0.0.1:8000/api/getarticles` to fetch all top headlines in JSON format.
+
+- Visit `http://127.0.0.1:8000/articles` to display the latest news with a design layout.
+- Visit `http://127.0.0.1:8000/api/getarticles` to fetch all top headlines in JSON format.
 
 ### Author
+
 [Aamir shan](http://github.com/aamirshan)
 
 ## License
+
 This project is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
