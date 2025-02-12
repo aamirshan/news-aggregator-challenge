@@ -29,14 +29,20 @@ Used for the API for News Aggregation, from NewsAPI, The Guardian & New York Tim
 1. **PHP 8.0+**
 1. **MySQL 8.0+**
 1. **[Composer](https://getcomposer.org/) installed.**
-1. `git clone https://github.com/YOUR_GITHUB_USERNAME/news-aggregator.git`
-1. `cd news-aggregator`
+1. `git clone https://github.com/aamirshan/news-aggregator-challenge.git`
+1. `cd news-aggregator-challenge`
 1. `cp .env.example .env`
 1. Populate your `.env` file with the API keys and database credentials as specified in the configuration section.
 1. `composer install`
 1. `php artisan key:generate`
 1. `php artisan migrate`
 1. `php artisan serve`
+
+### SET Schedule for fetching news from above API'section
+
+path : app/console/kernel.php
+$schedule->command('fetch:news')->everyMinute();
+you can set refresh time of news apis as per your requirments
 
 ### Usage
 
